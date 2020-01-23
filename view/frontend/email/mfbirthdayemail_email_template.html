@@ -1,0 +1,32 @@
+<!--
+/**
+ * Copyright © Magefan (support@magefan.com). All rights reserved.
+ * Please visit Magefan.com for license details (https://magefan.com/end-user-license-agreement).
+ */
+-->
+<!--@subject {{trans "Happy Birthday. Best wishes from %store_name team" store_name=$store.getFrontendName()}} @-->
+<!--@vars {
+"var this.getUrl($store, 'customer/account/')":"Customer Account URL",
+"var customer.email":"Customer Email",
+"var customer.name":"Customer Name"
+} @-->
+
+{{template config_path="design/email/header_template"}}
+
+<p class="greeting">{{trans "Dear %name," name=$customer.firstname}}</p>
+<p>{{trans "We are writing to wish you a happy birthday. We hope that you enjoy the day."}}</p>
+
+<p>{{trans "We have prepared a small gift for you  :-)"}}</p>
+<p>{{trans "A coupon code: <strong>HAPPYBIRTHDAY2U<strong> "|raw}}</p>
+<p>
+    {{trans
+    'You can use it at any time during the week to get 10% discount at our store: <a href="%store_url">%store_url</a>'
+
+    store_url=$this.getUrl($store,'/',[_nosid:1])
+    |raw}}
+</p>
+
+<p>{{trans "Sincerely yours,"}}</p>
+
+
+{{template config_path="design/email/footer_template"}}
