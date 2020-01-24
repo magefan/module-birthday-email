@@ -3,7 +3,9 @@
 [![Total Downloads](https://poser.pugx.org/magefan/module-birthday-email/downloads)](https://packagist.org/packages/magefan/module-birthday-email)
 [![Latest Stable Version](https://poser.pugx.org/magefan/module-birthday-email/v/stable)](https://packagist.org/packages/magefan/module-birthday-email)
 
-This Magento 2 Birthday Email module allows you to send birthday email to the customers by cron automatically each day
+This Magento 2 Birthday Email module allows you to send birthday email to the customers by cron automatically each day.
+
+Модуль створено спеціально для [Meet Magento Ternopil](https://www.facebook.com/Magento-Meetup-Ternopil-113340990099336).
 
 ## Requirements
   * Magento Community Edition 2.0.0-2.3.x or Magento Enterprise Edition 2.0.0-2.3.x
