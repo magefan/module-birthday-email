@@ -8,7 +8,7 @@ This Magento 2 Birthday Email module allows you to send birthday email to the cu
 Модуль створено спеціально для [Meet Magento Ternopil](https://www.facebook.com/Magento-Meetup-Ternopil-113340990099336).
 
 ## Requirements
-  * Magento Community Edition 2.0.0-2.3.x or Magento Enterprise Edition 2.0.0-2.3.x
+  * Magento Community Edition 2.0.0-2.4.0 or Magento Enterprise Edition 2.0.0-2.4.0
   * [Magefan Community Extension](https://github.com/magefan/module-community) >= v2.0.10 . Please install this extension first if you use installation via FTP.
 
 
