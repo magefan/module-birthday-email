@@ -119,7 +119,7 @@ class EmailSender implements EmailSenderInterface
                     'customer' => $customer,
                     'store' => $this->storeManager->getStore($customer->getStoreId())
                 ])
-                ->setFrom(
+                ->setFromByScope(
                     [
                         'name' => $this->scopeConfig->getValue(
                             'trans_email/ident_' . $senderIdentity . '/name',
