@@ -2,7 +2,7 @@
     "name": "magefan/module-birthday-email",
     "description": "Send birthday email to the customers by cron every day",
     "require": {
-        "magefan/module-community" : ">=2.0.10"
+        "magefan/module-community" : ">=2.1.10"
     },
     "type": "magento2-module",
     "authors": [
@@ -11,7 +11,7 @@
             "name": "Ihor Vansach"
         }
     ],
-    "version": "2.0.0",
+    "version": "2.0.1",
     "autoload": {
         "files": [ "registration.php" ],
         "psr-4": {
