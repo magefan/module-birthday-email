@@ -13,7 +13,7 @@
 
 {{template config_path="design/email/header_template"}}
 
-<p class="greeting">{{trans "Dear %name," name=$customer.firstname}}</p>
+<p class="greeting">{{trans "Dear %name," name=$customer.getFirstname()}}</p>
 <p>{{trans "We are writing to wish you a happy birthday. We hope that you enjoy the day."}}</p>
 
 <p>{{trans "We have prepared a small gift for you  :-)"}}</p>
