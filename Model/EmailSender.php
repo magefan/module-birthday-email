@@ -136,7 +136,7 @@ class EmailSender implements EmailSenderInterface
                 ->addTo($customer->getEmail());
 
             $copyTo = (string)$this->scopeConfig->getValue(
-                'mfbirthdayemail/email//copy_to',
+                'mfbirthdayemail/email/copy_to',
                 ScopeInterface::SCOPE_STORE,
                 $customer->getStoreId()
             );
@@ -145,7 +145,7 @@ class EmailSender implements EmailSenderInterface
             foreach ($copyTo as $to) {
                 $to = trim($to);
                 if ($to) {
-                    $this->transportBuilder->addBcc($copyTo);
+                    $this->transportBuilder->addBcc($to);
                 }
             }
 
