@@ -13,7 +13,7 @@ use Magento\Framework\Stdlib\DateTime\DateTime;
 use Magefan\BirthdayEmail\Api\EmailSenderInterface;
 
 /**
- * Class BirthdayEmail
+ * Send birthday emails to customers whose birthday is today
  */
 class BirthdayEmail
 {

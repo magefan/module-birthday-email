@@ -17,7 +17,7 @@ use Magento\Store\Model\ScopeInterface;
 use Magefan\BirthdayEmail\Api\EmailSenderInterface;
 
 /**
- * Class EmailSender
+ * Send the birthday email to a customer in the customer store
  */
 class EmailSender implements EmailSenderInterface
 {
@@ -78,8 +78,9 @@ class EmailSender implements EmailSenderInterface
 
     /**
      * Send birthday email to customer
+     *
      * @param \Magento\Customer\Api\Data\CustomerInterface $customer
-     * @return bool
+     * @return void
      */
     public function send(\Magento\Customer\Api\Data\CustomerInterface $customer): void
     {
@@ -153,7 +154,9 @@ class EmailSender implements EmailSenderInterface
             $transport->sendMessage();
 
         } catch (\Exception $e) {
-            $this->logger->debug('Cannot send  Birthday Email to the customer ID ' . $customer->getId() . '. Error: ' . $e->getMessage());
+            $this->logger->debug(
+                'Cannot send  Birthday Email to the customer ID ' . $customer->getId() . '. Error: ' . $e->getMessage()
+            );
         }
         $this->inlineTranslation->resume();
         $this->emulation->stopEnvironmentEmulation();
